@@ -1,0 +1,98 @@
+/* Common styles for all screen sizes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+.card{
+    padding: 20px;
+    box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+  -webkit-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+  -moz-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+}
+
+.card h1{
+    color: blue;
+}
+
+.card .content{
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    
+}
+.card .buttons{
+    display: flex;
+    width: 100%;
+    
+}
+
+.card .buttons button{
+    cursor: pointer;
+   padding: 5px 15px 5px 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.card .buttons .edit{
+    background-color: #0000ff;
+    border: #0000ff;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.card .buttons .edit:hover{
+    opacity: 0.5;
+}
+.card .buttons .delete:hover{
+    opacity: 0.5;
+}
+
+.card .buttons .delete{
+    background-color: red;
+    border: #0000ff;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.card div p{
+    margin-left: 2px;
+    color: gray;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.music-list{
+  font-size: 20px;
+  color: #0000ff;
+}
+
+.nav-icon{
+  color: blue;
+  cursor: pointer;
+}
+  
+  
+  @media only screen and (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

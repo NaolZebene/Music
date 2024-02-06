@@ -1,0 +1,28 @@
+.analytics{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.chart{
+    box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+    -webkit-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+    -moz-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 440px;
+}
+
+.bar{
+    width: 90%;
+    max-height: 430px;
+}
+
+.table{
+    margin-top: 30px;
+    width: 100%;
+}

@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  position: relative;
+}
+.container{
+  display:flex;
+}
+main{
+  padding: 20px;
+  width: 100%; 
+  margin-right: 20px;
+}
+.sidebar{
+  margin-right: 20px;
+  z-index: 20;
+  background: blue;
+  color: #fff;
+  min-height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  cursor: pointer;
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.01s;
+  cursor: pointer;
+}
+.link:hover{
+  cursor: pointer;
+  background:white;
+  color: white;
+  transition: all 0.5s;
+}
+.active{
+  background: lightskyblue;
+  color: white;
+}
+.icon, .link_text{
+  cursor: pointer;
+  font-size: 20px;
+}
+.app{
+  position: relative;
+}
+.nav{
+  box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+  -webkit-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+  -moz-box-shadow: -1px 4px 14px 1px rgba(0,0,0,0.34);
+  background-color: blue;
+  height: 60px;
+  z-index: 10;
+  position: fixed;
+  width: 100%; 
+}
+.navigation{
+  display: flex;
+  height: 100%;
+  width: 80%;
+  justify-content: flex-end;
+  align-content: center;
+}
+.plus-icon{
+color: white;
+cursor: pointer;
+
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
